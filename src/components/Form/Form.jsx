@@ -1,12 +1,15 @@
 import { useState } from 'react';
-import { Input, Button } from './Form';
+import { Input, Button } from './Form.styled';
 
 const Form = ({ params }) => {
   const [query, setQuery] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
-
+    if (!query) {
+      alert('Введіть назву фільму');
+      return;
+    }
     params({ query });
   };
 

@@ -12,3 +12,4 @@ export const Input = styled.input`
   background: #2b2b2b;
   border-radius: 10px;
 `;
+export const Button = styled.button``;
