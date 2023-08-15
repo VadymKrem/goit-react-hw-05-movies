@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Input, Button } from './Form.styled';
+import PropTypes from 'prop-types';
 
 const Form = ({ params }) => {
   const [query, setQuery] = useState('');
@@ -31,3 +32,7 @@ const Form = ({ params }) => {
 };
 
 export default Form;
+
+Form.propTypes = {
+  params: PropTypes.func,
+};
