@@ -32,6 +32,7 @@ const MoviesDetails = () => {
         alt="poster"
       />
       <Link to="cast">Cast</Link>
+      <p> </p>
       <Link to="reviews">Reviews</Link>
       <Outlet />
     </>
